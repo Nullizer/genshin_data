@@ -12,5 +12,4 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '*'
-    - run: node -v && npm -v
     - run: npx surge . genshin-data.surge.sh --token ${{ secrets.SURGE_TOKEN }}
