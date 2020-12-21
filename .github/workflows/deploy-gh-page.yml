@@ -13,4 +13,4 @@ jobs:
       with:
         node-version: '*'
     - run: node -v && npm -v
-    - run: npx surge dist genshin-data.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+    - run: npx surge . genshin-data.surge.sh --token ${{ secrets.SURGE_TOKEN }}
